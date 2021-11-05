@@ -30,6 +30,7 @@ public class CalculadoraController implements Initializable {
 		loader.load();
 	}
 
+	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 		numero.bindBidirectional(numeroText.textProperty());
 	}
