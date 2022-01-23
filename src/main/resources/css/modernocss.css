@@ -1,0 +1,83 @@
+.root {
+	-fx-background-color: black;
+	-fx-font-family: monospace;
+	-fx-hgap: 5px;
+	-fx-vgap: 5px;
+	-fx-padding: 5px 5px 5px 5px;
+}
+
+.text-field {
+	-fx-text-fill: #bbbbbb;
+	-fx-background-color: transparent;
+	-fx-text-alignment: right;
+	-fx-font-size: 25.0pt;
+	-fx-padding: 10px 10px 10px 10px;
+	-fx-font-weight: bold;
+	-fx-background-insets: 0px;
+}
+
+.button {
+	-fx-font-size: 16.0pt;
+	-fx-background-radius: 5em;
+	-fx-background-insets: 0px;
+	-fx-border-radius: 5em;
+}
+
+.button:focused {
+	-fx-border-color: white;
+}
+
+.button:armed {
+	-fx-border-color: yellow;
+}
+
+.botonesNumeric {
+	-fx-text-fill: white;
+	-fx-background-color: gray;
+}
+
+.botonesNumeric:hover {
+	-fx-text-fill: gray;
+	-fx-background-color: white;
+}
+
+.botonesNumeric:pressed {
+	-fx-text-fill: #bbbbbb;
+	-fx-background-color: black;
+}
+
+.reinicioButtons {
+	-fx-text-fill: black;
+	-fx-background-color: #bbbbbb;
+}
+
+.reinicioButtons:hover {
+	-fx-background-color: white;
+}
+
+.reinicioButtons:pressed {
+	-fx-text-fill: #bbbbbb;
+	-fx-background-color: black;
+}
+
+.operadoresButtons {
+	-fx-text-fill: white;
+	-fx-background-color: orange;
+}
+
+.operadoresButtons:hover {
+	-fx-background-color: #b85f00;
+}
+
+.operadoresButtons:hover:default {
+	-fx-background-color: red;
+}
+
+.operadoresButtons:pressed {
+	-fx-text-fill: orange;
+	-fx-background-color: white;
+}
+
+#igualButton:default {
+	-fx-background-color: orangered;
+}

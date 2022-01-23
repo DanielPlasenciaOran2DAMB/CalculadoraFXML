@@ -10,6 +10,8 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.control.ContextMenu;
+import javafx.scene.control.MenuItem;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.BorderPane;
 
@@ -33,6 +35,22 @@ public class CalculadoraController implements Initializable {
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 		numero.bindBidirectional(numeroText.textProperty());
+
+		MenuItem clasicoItem = new MenuItem("Clásico");
+		clasicoItem.setOnAction(e -> {
+			view.getStylesheets().add("/css/clasicocss.css");
+		});
+
+		MenuItem modernoItem = new MenuItem("Moderno");
+		modernoItem.setOnAction(e -> {
+			view.getStylesheets().add("/css/modernocss.css");
+		});
+
+		ContextMenu menu = new ContextMenu(clasicoItem, modernoItem);
+
+		view.setOnContextMenuRequested(e -> {
+			menu.show(view, e.getScreenX(), e.getScreenY());
+		});
 	}
 
 	@FXML
